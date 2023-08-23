@@ -2,7 +2,7 @@ const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {
   sequelize.define(
-    "user",
+    "song",
     {
       id: {
         type: DataTypes.UUID,
@@ -10,22 +10,25 @@ module.exports = (sequelize) => {
         defaultValue: DataTypes.UUIDV4,
         allowNull: false,
       },
-      username: {
+      name: {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      email: {
-        type: DataTypes.STRING,
+      song: {
+        type: DataTypes.TEXT,
         unique: true,
+      },
+      description: {
+        type: DataTypes.STRING,
         allowNull: false,
       },
-      premium: {
-        type: DataTypes.BOOLEAN,
-        defaultValue: false,
+      artist: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      genre: {
+        type: DataTypes.STRING,
+        allowNull: false,
       },
     },
     { timestamps: false }
