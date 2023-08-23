@@ -8,9 +8,8 @@ module.exports = (sequelize) => {
         type: DataTypes.UUID,
         primaryKey: true,
         defaultValue: DataTypes.UUIDV4,
-        allowNull: false,
       },
-      name: {
+      username: {
         type: DataTypes.STRING,
         allowNull: false,
       },
@@ -27,7 +26,10 @@ module.exports = (sequelize) => {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
+      image: {
+        type: DataTypes.TEXT
+      }
     },
-    { timestamps: false }
+    { timestamps: false, freezeTableName: true }
   );
 };

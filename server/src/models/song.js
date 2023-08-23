@@ -8,7 +8,6 @@ module.exports = (sequelize) => {
         type: DataTypes.UUID,
         primaryKey: true,
         defaultValue: DataTypes.UUIDV4,
-        allowNull: false,
       },
       name: {
         type: DataTypes.STRING,
@@ -17,6 +16,7 @@ module.exports = (sequelize) => {
       song: {
         type: DataTypes.TEXT,
         unique: true,
+        allowNull: false
       },
       description: {
         type: DataTypes.STRING,
@@ -30,7 +30,11 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
+      image: {
+        type: DataTypes.TEXT,
+        allowNull: false
+      }
     },
-    { timestamps: false }
+    { timestamps: false, freezeTableName: true }
   );
 };
