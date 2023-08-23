@@ -5,6 +5,7 @@ const {
   getUserById,
   deleteMydata,
 } = require("../controllers/usersControllers");
+const { User } = require("../db");
 
 //aqui se trea o por nombre o todas la data
 const getUsersHandler = async (req, res) => {
@@ -48,7 +49,24 @@ const postUserHandler = async (req, res) => {
 };
 
 const actualizarUser = async (req, res) => {
-  res.send("estas en actualziar del handler");
+  //res.send("estas en actualziar del handler");
+  const { id } = req.params;
+  const { name, email, password } = req.body;
+
+  try {
+    //const updateuser = await updateuser(id, name, email, password);
+    let userId = await User.findByPk(id);
+    if (!userId) {
+      res.status(400).json({ message: `Id incorrecto` });
+    }
+    // userId = { ...userId, name, email, password };
+    await userId.update({ ...userId, name, email, password });
+    res.status(200).json(userId);
+  } catch (error) {
+    return res
+      .status(400)
+      .json({ error: "No se recibieron parametros necesarios" });
+  }
 };
 
 const deleteUserData = async (req, res) => {
