@@ -1,4 +1,4 @@
-const { user } = require("../db");
+const { User } = require("../db");
 const { Op } = require("sequelize");
 
 // const cleanArray = (arr) =>
@@ -12,7 +12,7 @@ const { Op } = require("sequelize");
 
 const getAllUsers = async () => {
   //console.log("estas en el controller de users");
-  const useDataBase = await user.findAll();
+  const useDataBase = await User.findAll();
   //console.log(useDataBase);
   //*** queda de forma opsional si no desea que se muetre el ID de la DB */
   //const clearData = cleanArray(useDataBase);
@@ -24,7 +24,7 @@ const getUserByName = async (name) => {
   //console.Console("user");
   //const filterApi = userData.filter((users) => users.name === name);
   //const databaseUser = await user.findAll({ where: { name } });
-  const databaseUser = await user.findAll({
+  const databaseUser = await User.findAll({
     where: { name: { [Op.iLike]: `%${name}%` } },
   });
   console.log(databaseUser);
@@ -39,17 +39,17 @@ const getUserById = async (id) => {
   //         .data
   //     : await user.findByPk(id);
 
-  const userId = await user.findByPk(id);
+  const userId = await User.findByPk(id);
   return userId;
 };
 
 const createuser = async (name, email, password) => {
   // console.log("estas en el post de user");
-  return await user.create({ name, email, password });
+  return await User.create({ name, email, password });
 };
 
 const deleteMydata = async (id) => {
-  const deleteUser = await user.findByPk(id);
+  const deleteUser = await User.findByPk(id);
 
   const respuesDelete = await deleteUser.destroy();
 

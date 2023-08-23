@@ -35,6 +35,11 @@ sequelize.models = Object.fromEntries(capsEntries);
 
 const { User, Song, Playlist } = sequelize.models;
 
+// Relations
+User.belongsToMany(Song, { through: "user_song" });
+Song.belongsToMany(Playlist, { through: "song_playlist" });
+Playlist.belongsToMany(User, { through: "playlist_user" });
+
 module.exports = {
   sequelize,
   ...sequelize.models,
