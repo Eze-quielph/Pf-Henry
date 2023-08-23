@@ -1,5 +1,5 @@
-const axios = require("axios");
 const { user } = require("../db");
+const { Op } = require("sequelize");
 
 // const cleanArray = (arr) =>
 //   arr.map((el) => {
@@ -22,19 +22,44 @@ const getAllUsers = async () => {
 
 const getUserByName = async (name) => {
   //console.Console("user");
-  const databaseUser = await user.findAll({ where: { name: name } });
   //const filterApi = userData.filter((users) => users.name === name);
+  //const databaseUser = await user.findAll({ where: { name } });
+  const databaseUser = await user.findAll({
+    where: { name: { [Op.iLike]: `%${name}%` } },
+  });
+  console.log(databaseUser);
 
   return databaseUser;
 };
 
-const createuser = async (username, email, password) => {
+const getUserById = async (id) => {
+  // const userId =
+  //   source === "api"
+  //     ? (await axios.get(`https://users/${id}`))
+  //         .data
+  //     : await user.findByPk(id);
+
+  const userId = await user.findByPk(id);
+  return userId;
+};
+
+const createuser = async (name, email, password) => {
   // console.log("estas en el post de user");
-  return await user.create({ username, email, password });
+  return await user.create({ name, email, password });
+};
+
+const deleteMydata = async (id) => {
+  const deleteUser = await user.findByPk(id);
+
+  const respuesDelete = await deleteUser.destroy();
+
+  return respuesDelete;
 };
 
 module.exports = {
   getAllUsers,
   createuser,
   getUserByName,
+  getUserById,
+  deleteMydata,
 };
