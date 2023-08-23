@@ -1,5 +1,6 @@
 const usermodel = require("./models/user");
-const cancionmodel = require("./models/cancion");
+const songmodel = require("./models/song");
+const playlistmodel = require("./models/playlist");
 
 const { Sequelize } = require("sequelize");
 require("dotenv").config();
@@ -14,7 +15,8 @@ const sequelize = new Sequelize(
 );
 
 usermodel(sequelize);
-cancionmodel(sequelize);
+songmodel(sequelize);
+playlistmodel(sequelize);
 
 module.exports = {
   sequelize,

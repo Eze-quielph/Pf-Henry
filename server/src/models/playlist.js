@@ -2,7 +2,7 @@ const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {
   sequelize.define(
-    "cancion",
+    "playlist",
     {
       id: {
         type: DataTypes.UUID,
@@ -14,9 +14,9 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      url: {
+      description: {
         type: DataTypes.STRING,
-        unique: true,
+        allowNull: false,
       },
     },
     { timestamps: false }
