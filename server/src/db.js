@@ -18,6 +18,8 @@ usermodel(sequelize);
 songmodel(sequelize);
 playlistmodel(sequelize);
 
+const { user } = sequelize.models;
+
 module.exports = {
   sequelize,
   ...sequelize.models,
