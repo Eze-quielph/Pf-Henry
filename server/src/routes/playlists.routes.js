@@ -1,10 +1,13 @@
 const express = require("express");
 const playlistsRouter = express();
-const PlaylistHandle = require('../handlers/playlistsHandlers')
-const playlistsHandlers = new PlaylistHandle()
+const PlaylistHandler = require('../handlers/playlistsHandlers')
+const playlistHandler = new PlaylistHandler()
 
-playlistsRouter.get("/", playlistsHandlers.getPlaylists);
-playlistsRouter.post("/", playlistsHandlers.postPlaylist);
-playlistsRouter.put('/:id', playlistsHandlers.updatePlaylist)
+playlistsRouter.get("/", playlistHandler.getPlaylists);
+playlistsRouter.get("/:id", playlistHandler.getPlaylistById);
+playlistsRouter.get("/name", playlistHandler.getPlaylistByName);
+playlistsRouter.post("/", playlistHandler.postPlaylist);
+playlistsRouter.put('/:id', playlistHandler.putPlaylist);
+playlistsRouter.delete("/:id", playlistHandler.deletePlaylist);
 
 module.exports = playlistsRouter;

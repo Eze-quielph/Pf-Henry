@@ -1,11 +1,16 @@
 const express = require("express");
 const songsRouter = express();
-const SongHandle = require("../handlers/songsHandlers");
+const SongHandler = require("../handlers/songsHandlers");
 
-const songHandle = new SongHandle()
+const songHandler = new SongHandler()
 
-songsRouter.get("/", songHandle.getSongsHandler);
-songsRouter.post("/", songHandle.postSongHandler);
-songsRouter.delete('/:id', songHandle.deleteSong)
+songsRouter.get("/", songHandler.getSongs);
+songsRouter.get("/:id", songHandler.getSongById);
+songsRouter.get("/name", songHandler.getSongByName);
+songsRouter.get("/artist", songHandler.getSongsByArtist);
+songsRouter.get("/genre", songHandler.getSongsByGenre);
+songsRouter.post("/", songHandler.postSong);
+songsRouter.put("/:id", songHandler.putSong);
+songsRouter.delete('/:id', songHandler.deleteSong)
 
 module.exports = songsRouter;

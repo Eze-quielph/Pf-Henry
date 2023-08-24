@@ -10,7 +10,7 @@ const { Op } = require("sequelize");
 //     };
 //   });
 
-const getAllUsers = async () => {
+const getUsers = async () => {
   //console.log("estas en el controller de users");
   const useDataBase = await User.findAll();
   //console.log(useDataBase);
@@ -43,12 +43,12 @@ const getUserById = async (id) => {
   return userId;
 };
 
-const createuser = async (name, email, password) => {
+const postUser = async (name, email, password) => {
   // console.log("estas en el post de user");
   return await User.create({ name, email, password });
 };
 
-const deleteMydata = async (id) => {
+const deleteUser = async (id) => {
   const deleteUser = await User.findByPk(id);
 
   const respuesDelete = await deleteUser.destroy();
@@ -57,9 +57,9 @@ const deleteMydata = async (id) => {
 };
 
 module.exports = {
-  getAllUsers,
-  createuser,
+  getUsers,
   getUserByName,
   getUserById,
-  deleteMydata,
+  postUser,
+  deleteUser,
 };
