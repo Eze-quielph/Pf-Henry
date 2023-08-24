@@ -5,6 +5,7 @@ const {
   getUserById,
   deleteMydata,
 } = require("../controllers/usersControllers");
+const { User } = require("../db");
 
 class UserHandler {
   constructor() {}
@@ -22,9 +23,16 @@ class UserHandler {
       res.status(400).json({ error: error.message });
     }
   };
-
-  getuserById = async (req, res) => {
+getuserById = async (req, res) => {
     const { id } = req.params;
+
+    try {
+      const data = await getUserById(id);
+      res.status(200).json({ result: data });
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  };
 
     try {
       const data = await getUserById(id);
