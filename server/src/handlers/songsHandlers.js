@@ -1,14 +1,20 @@
 const { getAllSongs } = require("../controllers/songsControllers");
 
-const getSongsHandler = async (req, res) => {
-  res.send("estas en el handler de songs");
-};
 
-const postSongHandler = async (req, res) => {
-  res.send("estas en el post de songs");
-};
+class SongHandle {
+  constructor() { };
 
-module.exports = {
-    getSongsHandler,
-    postSongHandler,
-};
+  getSongs = async (req, res) => {
+    res.status(200).send("estas en el handler de songs");
+  };
+
+  postSong = async (req, res) => {
+    res.status(200).send("estas en el post de songs");
+  };
+
+  deleteSong = async(req, res) =>{ 
+    res.status(200).send('todo ok')
+  }
+}
+
+module.exports = SongHandle

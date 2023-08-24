@@ -1,15 +1,20 @@
 const { getAllPlaylists } = require("../controllers/playlistsControllers");
 
-const getPlaylistsHandler = async (req, res) => {
-  res.send("estas en el handler de playlists");
-};
+class PlaylistHandle {
 
-const postPlaylistHandler = async (req, res) => {
-  res.send("estas en el post de playlists");
-};
+  constructor(){};
 
+  getPlaylists = async (req, res) => {
+    res.status(200).send("estas en el handler de playlists");
+  };
+  
+  postPlaylist = async (req, res) => {
+    res.status(200).send("estas en el post de playlists");
+  };
 
-module.exports = {
-    getPlaylistsHandler,
-    postPlaylistHandler,
-};
+  updatePlaylist = async(req, res)=>{
+    res.status(200).send("estas en el put de playlists");
+  }
+}
+
+module.exports = PlaylistHandle
