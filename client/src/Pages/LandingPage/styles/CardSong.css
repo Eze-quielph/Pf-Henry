@@ -1,0 +1,67 @@
+.card-song {
+  align-items: center;
+  width: 300px;
+  height: auto;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  background: rgb(242, 242, 242);
+  transition: box-shadow 0.5s, background-color 0.3s, transform 0.3s;
+}
+
+.card-song:hover {
+  box-shadow: 0px 0px 12px 4px rgba(1, 8, 30, 0.2);
+  border: 2px solid #a4acaf;
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.05);
+}
+
+.card-info {
+  border-radius: 3px;
+  padding: 0.1px 10.5px 0.1px 10.5px;
+  margin-top: 0;
+  transition: background-color 0.3s;
+}
+
+.card-song-info {
+  background-color: #ffffff;
+  margin-top: 1em;
+  padding: 0em;
+  border-radius: 0px 0px 7px 7px;
+}
+
+.card-name {
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #888;
+  margin-top: 20px 0px 0px 0px;
+  font-weight: 600;
+}
+
+.card-artista {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.image-song {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px 5px 0px 0px;
+  background: #ffffff;
+  transition: transform 0.3s;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+

@@ -1,0 +1,127 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Telegraf", sans-serif;
+}
+
+.container-entryLanding {
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(to bottom, #1DB954, #000000);
+}
+
+.subContainer-text-and-button {
+  width: 50%;
+  text-align: left;
+  margin-left: 7.5em;
+}
+
+.welcome-text {
+  font-size: 90px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 13px rgba(0, 0, 0, 0.1);
+}
+
+.text-paragraph {
+  font-size: 40px;
+  font-weight: 200;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.home-button span {
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 15px 55px;
+  background-color: #000000;
+  border-radius: 3px;
+  text-decoration: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  margin: 0;
+}
+
+.home-button:hover {
+  background-color: #2ab595;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.random-image {
+  max-width: 32%;
+  height: auto;
+  margin-right: 9%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  transform: scaleX(-1);
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+
+  .container-landing-page {
+    align-items: center;
+  }
+  
+  .subContainer-text-and-button {
+    width: 80%;
+    text-align: left; 
+    margin: 0 auto; 
+    padding: 1em; 
+  }
+  
+  .welcome-text {
+    font-size: 50px; 
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-paragraph {
+    font-size: 20px; 
+    font-weight: 200;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .home-button span {
+    font-size: 16px; 
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .home-button {
+    display: inline-block;
+    padding: 10px 35px; 
+    border-radius: 3px;
+    text-decoration: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    margin: 0;
+  }
+
+  .home-button span {
+    font-size: 14px;
+  }
+}
