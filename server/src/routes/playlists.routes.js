@@ -1,5 +1,4 @@
-const express = require("express");
-const playlistsRouter = express();
+const playlistsRouter = require('express').Router()
 const PlaylistHandler = require('../handlers/playlistsHandlers')
 const playlistHandler = new PlaylistHandler()
 

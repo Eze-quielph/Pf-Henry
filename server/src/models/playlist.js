@@ -17,6 +17,9 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
+      isActive: {
+        type: DataTypes.BOOLEAN,
+      }
     },
     { timestamps: false, freezeTableName: true }
   );

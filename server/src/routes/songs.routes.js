@@ -1,5 +1,4 @@
-const express = require("express");
-const songsRouter = express();
+const songsRouter = require("express").Router();
 const SongHandler = require("../handlers/songsHandlers");
 
 const songHandler = new SongHandler()

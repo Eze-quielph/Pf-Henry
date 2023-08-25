@@ -1,12 +1,9 @@
-const { Router } = require("express");
+const mainRouter = require("express").Router();
 
 // Importo todas las rutas
 const usersRouter = require("./users.routes");
 const songsRouter = require("./songs.routes");
 const playlistsRouter = require("./playlists.routes");
-
-// Configuro los routers
-const mainRouter = Router();
 
 mainRouter.use("/users", usersRouter);
 mainRouter.use("/songs", songsRouter);
