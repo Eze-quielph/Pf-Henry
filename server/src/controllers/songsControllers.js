@@ -32,33 +32,13 @@ const getSongByGenre = async (genre) => {
   return songByGenre;
 };
 
-const postSong = async (
-  name,
-  song,
-  description,
-  artist,
-  genre,
-  image
-) => {
-  return await Song.create({ name,
-    song,
-    description,
-    artist,
-    genre,
-    image });
+const postSong = async (name, song, description, artist, genre, image) => {
+  return await Song.create({ name, song, description, artist, genre, image });
 };
 
-const putSong = async (
-  name,
-  song,
-  description,
-  artist,
-  genre,
-  image,
-  id
-) => {
-  const song = await Song.findByPk(id);
-  
+const putSong = async (name, song, description, artist, genre, image, id) => {
+  const songToUpdate = await Song.findByPk(id);
+
   Song.update({
     name: name,
     song: song,
@@ -66,16 +46,16 @@ const putSong = async (
     artist: artist,
     genre: genre,
     image: image,
-  })
-  
-  return song;
+  });
+
+  return songToUpdate;
 };
 
 const deleteSong = async (id) => {
-  const songToDelete = await Song.findByPk(id)
-  await songToDelete.destroy()
+  const songToDelete = await Song.findByPk(id);
+  await songToDelete.destroy();
   return {
-      message: "Song successfully deleted"
+    message: "Song successfully deleted",
   };
 };
 

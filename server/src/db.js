@@ -39,6 +39,8 @@ const { User, Song, Playlist } = sequelize.models;
 User.belongsToMany(Song, { through: "user_song" });
 Song.belongsToMany(Playlist, { through: "song_playlist" });
 Playlist.belongsToMany(User, { through: "playlist_user" });
+Song.belongsTo(User, { through: "user_song" });
+Playlist.belongsToMany(Song, { through: "song_playlist" });
 
 module.exports = {
   sequelize,

@@ -33,6 +33,10 @@ module.exports = (sequelize) => {
       image: {
         type: DataTypes.TEXT,
         allowNull: false
+      },
+      isActive: {
+        type: DataTypes.BOOLEAN,
+        defaultValue:true
       }
     },
     { timestamps: false, freezeTableName: true }
