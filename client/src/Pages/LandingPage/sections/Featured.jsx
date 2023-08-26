@@ -26,21 +26,18 @@ const Featured = () => {
       album: "Álbum 1",
       descripcion: "Descripción 1",
     }
-    // ... agregar más tarjetas
   ];
   return (
     <div className="container-featured">
       <div className="featured-subContainer">
         {/* Encabezado */}
-        <h1 className="featured-title">Sumérgete de lleno en el sonido</h1>
+        <h1 className="featured-title">Descubre los artistas y bandas más destacados de esta temporada</h1>
         {/* Párrafo descriptivo */}
         <p className="featured-paragraph">
-          Descubre una forma completamente nueva de enamorarte de tu música
-          favoritta con Dolby Atmos Music y Sony 360 Reality Audio. Cada
-          innovador formato de sonido espacial emite el sonido a tu alrededor
-          con toda precisión para crear un entorno inmersivo.
+          Sumérgete en la música más vibrante y actual: Explora los sonidos y talentos que están marcando tendencia en esta temporada.
         </p>
       </div>
+      {/* Por cada artista se renderiza una tarjeta */}
       <div className="featured-cards">
         {tarjetas.map((tarjeta, index) => (
           <CardArtist key={index} {...tarjeta} />

@@ -1,48 +1,46 @@
 .container-featured {
-  overflow: hidden; 
-  height: 100vh;
+  /* height: 700px; */
   display: flex;
+  overflow: hidden; 
+  background: #000;
   align-items: center;
   justify-content: space-between;
-  background: #000;
+  padding: 10em 4em 10em 4em;
+  gap: 10px;
 }
 
 .featured-subContainer {
   text-align: left;
+  padding-left: 3em;
   width: 50%;
 }
 
 .featured-title {
-  font-size: 50px;
   color: #FFF;
-  padding-left: 70px;
-  margin-bottom: 25px;
+  font-size: 40px;
   text-shadow: 2px 2px 13px rgba(0, 0, 0, 0.1);
 }
 
 .featured-paragraph {
-  font-size: 20px;
   color: #FFF;
-  margin-bottom: 1.5em;
+  font-size: 20px;
   font-weight: 400;
-  padding-left: 70px;
-  padding-right: 70px;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 .featured-cards {
-  padding: 2em;
+  gap: 10px;
+  width: 50%;
+  padding-right: 3em;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  /* background: #000; */
 }
 
 .random-image {
-  max-width: 32%;
   height: auto;
+  max-width: 32%;
   margin-right: 9%;
   margin-top: 1.5%;
   margin-bottom: 1.5%;

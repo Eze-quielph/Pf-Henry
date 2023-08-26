@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/CardSong.css";
 
-function CardSong({ imagen, cancion, artista, album }) {
+function CardSong({ imagen, cancion, artista }) {
   // Función para manejar el error de carga de imagen 🖼️
   const handleImageError = (event) => {
     event.target.onerror = null; // Evita el bucle infinito al asignar null al evento onerror
     event.target.src = "/countryNotFound.png"; // Carga una imagen por defecto en caso de error
-  };
+  }; // (Aún no escogi una imagen 😉❗)
 
   // El método substring se utiliza para extraer una porción de una cadena.
   // Los parámetros que se pasan son los índices de inicio y final.
@@ -19,6 +19,7 @@ function CardSong({ imagen, cancion, artista, album }) {
 
   return (
     <div className="card-song">
+    {/* <div className="card-song" style={{ backgroundImage: `url(${imagen})` }}> */}
       <div className="image-song">
         <img
           src={imagen}

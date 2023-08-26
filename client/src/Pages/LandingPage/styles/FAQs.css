@@ -1,8 +1,6 @@
 .container-faq {
   padding: 10em 3em 10em 3em;
-  /* background: #000; */
   background: linear-gradient(to top, #27272c, #000000);
-
 }
 
 .seccion-faq {
@@ -17,8 +15,7 @@
   font-size: 50px;
   text-align: center;
   color: #fff;
-  margin-top: 0;
-  margin-bottom: 80px;
+  margin-bottom: 2em;
 }
 
 .pregunta {
