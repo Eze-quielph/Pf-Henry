@@ -2,19 +2,20 @@
   align-items: center;
   width: 200px;
   height: auto;
-  padding: 1em;
   cursor: pointer;
   border-radius: 7px;
   border: 1px solid transparent;
-  background: rgb(242, 242, 242);
+  background: rgb(17, 8, 8);
   transition: box-shadow 0.5s, background-color 0.3s, transform 0.3s;
+  padding: 1rem;
+  margin: 2rem 0;
 }
 
 .card-artist:hover {
-  box-shadow: 0px 0px 12px 4px rgba(1, 8, 30, 0.2);
-  border: 2px solid #a4acaf;
-  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 12px 4px rgba(90, 203, 70, 0.905);
+  background-color: rgba(49, 46, 46, 0.05);
   transform: scale(1.05);
+  border: 2px solid rgb(41, 39, 39)
 }
 
 .cardArtist-info {
@@ -25,7 +26,7 @@
 }
 
 .card-artist-info {
-  background-color: #ffffff;
+  background-color: rgb(17, 8, 8);;
   margin-top: 1em;
   padding: 0em;
   border-radius: 0px 0px 7px 7px;
@@ -34,7 +35,7 @@
 .cardArtist-name {
   font-size: 17px;
   text-transform: capitalize;
-  color: #888;
+  color: #ffffff;
   margin-top: 20px 0px 0px 0px;
   font-weight: 600;
 }
@@ -42,7 +43,7 @@
 .cardArtist-artista {
   font-size: 14px;
   text-transform: capitalize;
-  color: #000;
+  color:  rgb(73, 60, 60);;
   margin-top: 0px;
   margin-bottom: 20px;
 }

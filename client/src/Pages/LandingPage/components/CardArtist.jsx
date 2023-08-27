@@ -18,6 +18,7 @@ function CardArtist({ imagen, cancion, artista }) {
   };
 
   return (
+    <swiper-slide>
     <div className="card-artist">
       <div className="imageArtist-artist">
         <img
@@ -36,6 +37,7 @@ function CardArtist({ imagen, cancion, artista }) {
         </div>
       </div>
     </div>
+    </swiper-slide>
   );
 }
 

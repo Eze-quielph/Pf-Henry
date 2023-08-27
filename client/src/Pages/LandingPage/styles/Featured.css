@@ -5,7 +5,7 @@
   background: #000;
   align-items: center;
   justify-content: space-between;
-  padding: 10em 4em 10em 4em;
+  padding: 10em 3rem;
   gap: 10px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .featured-paragraph {
-  color: #FFF;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 400;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.6);
@@ -30,9 +30,7 @@
 
 .featured-cards {
   gap: 10px;
-  width: 50%;
-  padding-right: 3em;
-  display: flex;
+  width: 60%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
