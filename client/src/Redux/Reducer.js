@@ -18,7 +18,7 @@ const initialState = {
         };
       default:
         return state;
-    }
+    } 
   };
   
   export default cardsReducer;
