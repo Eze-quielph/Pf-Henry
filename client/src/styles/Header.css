@@ -1,0 +1,99 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos para NavBar con transparencia cuando se hace scroll */
+nav.scrolling {
+  padding: 5px;
+  background-color: rgba(25, 25, 28, 0.10);
+  backdrop-filter: blur(3px);
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav div a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav div a:hover {
+  text-decoration: underline;
+}
+
+.logo-nav {
+  width: 55px;
+  height: auto;
+  padding: 0px;
+  margin-left: 100px;
+}
+
+.menu-nav {
+  margin-right: 100px;
+  gap: 10px;
+}
+
+.button-menu {
+  width: auto;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin: 5px;
+  padding: 20px;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.button-menu:hover {
+  background-color: #0000001d;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Estilo para el menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilo para el contenido del menú desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 5px;
+  min-width: 100px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Estilo para los enlaces dentro del menú desplegable */
+.dropdown-content a {
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Muestra el menú desplegable cuando se pasa el mouse sobre el botón */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+

@@ -1,13 +1,17 @@
+// Importación del enrutador y los componentes necesarios
+import { Route, Routes } from "react-router-dom";
+import React from "react";
 
-import './App.css'
+// Importación de las páginas
+import Home from "../src/Pages/LandingPage/Home"
 
-function App() {
- 
+export default function App() {
   return (
-    <div>
-    <h1>Spoty Fans</h1>
-     </div>
-  )
-}
+    // Enrutador principal
+    <Routes>
+      {/* Ruta a la página principal o inicio de la aplicación */}
+      <Route path="/" element={<Home />} />
 
-export default App
+    </Routes>
+  );
+}

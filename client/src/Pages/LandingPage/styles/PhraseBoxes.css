@@ -1,0 +1,8 @@
+.boxPhrase {
+    text-align: center;
+    font-size: 35px;
+    font-style: italic; /* Aplicar estilo de letra cursiva al contenido en cursiva */
+    padding-left: 3em;
+    padding-right: 3em;
+    color: white;
+}

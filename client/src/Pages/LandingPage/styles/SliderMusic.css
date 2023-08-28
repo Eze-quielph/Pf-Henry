@@ -1,0 +1,8 @@
+.slider-cardSong {
+  padding: 10em 3em 10em 3em;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  background: #000;
+}
