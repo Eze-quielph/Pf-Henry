@@ -13,6 +13,7 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
+
       password: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -27,8 +28,8 @@ module.exports = (sequelize) => {
         defaultValue: false,
       },
       image: {
-        type: DataTypes.TEXT
-      }
+        type: DataTypes.TEXT,
+      },
     },
     { timestamps: false, freezeTableName: true }
   );
