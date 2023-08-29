@@ -18,6 +18,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.15.0",
     "redux": "^4.2.1",
+    "socket.io-client": "^4.7.2",
     "swiper": "^10.2.0"
   },
   "devDependencies": {

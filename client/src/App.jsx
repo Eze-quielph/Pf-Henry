@@ -6,7 +6,7 @@ import React from "react";
 import Home from "../src/Pages/LandingPage/Home"
 import Terms from "./Pages/Terns/components/Terms";
 import ChatenVivo from './SocketIo/Chat'
-import './App.css'
+
 
 export default function App() {
   return (
