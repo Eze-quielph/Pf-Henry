@@ -5,6 +5,8 @@ import React from "react";
 // Importación de las páginas
 import Home from "../src/Pages/LandingPage/Home"
 import Terms from "./Pages/Terns/components/Terms";
+import ChatenVivo from './SocketIo/Chat'
+import './App.css'
 
 export default function App() {
   return (
@@ -13,8 +15,7 @@ export default function App() {
       {/* Ruta a la página principal o inicio de la aplicación */}
       <Route path="/" element={<Home />} />
       <Route path="/terms" element={<Terms />} />
-
-
+      <Route path='/chat' element={<ChatenVivo/>}/>
     </Routes>
   );
 }

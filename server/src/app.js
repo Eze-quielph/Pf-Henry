@@ -1,17 +1,34 @@
 const express = require("express");
 const morgan = require("morgan");
-const { Model } = require("sequelize");
-const useRoter = require("./router/index");
+const cors = require("cors");
+const mainRouter = require("./routes/index");
 
 const app = express();
 
+//Midleware and Cors
+app.disable("x-powered-by");
 app.use(express.json());
 app.use(morgan("dev"));
+app.use(cors());
 
-// app.get("/", (req, res) => {
-//   res.send("estas en elapp");
-// });
+/* {
+    origin: (origin, callback)=>{
+        const ACCEPTED_ORIGINS = {
 
-app.use(useRoter);
+        }
+
+        if(ACCEPTED_ORIGINS.includes(origin)){
+            return callback(null, true)
+        }
+
+        if(!origin){
+            return callback(null, true)
+        }
+
+        return callback(new Error('Not allowed by Cors'))
+    }} */
+
+//Router
+app.use(mainRouter);
 
 module.exports = app;
