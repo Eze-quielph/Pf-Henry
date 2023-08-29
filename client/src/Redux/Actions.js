@@ -7,4 +7,4 @@ export const loadCards = (cards) => ({
   export const applyFilter = (filter) => ({
     type: 'APPLY_FILTER',
     payload: filter,
-  });
+  }); 

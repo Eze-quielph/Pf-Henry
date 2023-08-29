@@ -7,7 +7,7 @@ const initialState = {
       case 'LOAD_CARDS':
         return {
           ...state,
-          Music: action.payload,
+          Music: action.payload, 
         };
       case 'APPLY_FILTER':
         const filter = action.payload;
