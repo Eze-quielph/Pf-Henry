@@ -1,0 +1,3 @@
+export const Intro = {
+    description1: "Al visitar, acceder o utilizar Spootichat, usted indica que tiene el derecho, la autoridad y la capacidad de celebrar este Acuerdo, que ha leído y comprende el Acuerdo y que ACEPTA CUMPLIR CON TODOS LOS TÉRMINOS Y LAS CONDICIONES DEL ACUERDO, INCLUIDAS LAS RENOVACIONES AUTOMÁTICAS DE SU SUSCRIPCIÓN Y LAS DISPOSICIONES CON RESPECTO A LA LEY APLICABLE. LEA LOS TÉRMINOS ATENTAMENTE. SI NO ESTÁ DE ACUERDO, NO ACCEDA NI UTILICE LOS SERVICIOS."
+}

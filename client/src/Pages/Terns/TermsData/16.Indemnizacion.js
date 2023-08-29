@@ -1,0 +1,6 @@
+export const Indemnizacion = {
+
+    title: "INDEMNIZACIÓN",
+
+    description1: "En la medida en que lo permita la ley aplicable, usted acepta indemnizar y liberar de toda responsabilidad a Spootichat y sus entidades afiliadas, y cada uno de sus empresas matrices, predecesores, sucesores, cesionarios, subsidiarias, propietarios, funcionarios y directivos (que actúen en dicha capacidad o de forma individual), agentes y abogados, actuales, anteriores o futuros, de todos los reclamos, acciones, demandas, incluidos, entre otros, los cargos legales y contables razonables, que surjan de (a) su violación o presunta violación del Acuerdo; (b) su acceso, uso o uso indebido no autorizado al Contenido del servicio o los Servicios; (c) cualquier violación de sus declaraciones y promesas establecidas en este documento; o (d) su violación de cualquier ley o derecho de un tercero. Debemos notificarle cualquier reclamo, demanda o procedimiento judicial de dicho tipo y lo ayudaremos, y usted cubrirá los cargos, a defenderse contra dicho reclamo, demanda o procedimiento judicial. Nos reservamos el derecho de asumir la defensa y el control exclusivo de cualquier asunto que sea objeto de indemnización de conformidad con esta sección. En dicho caso, usted acepta cooperar con cualquier solicitud razonable que ayude a nuestra defensa sobre dicho asunto."
+}

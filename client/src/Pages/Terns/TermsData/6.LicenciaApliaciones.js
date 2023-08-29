@@ -1,0 +1,7 @@
+export const LicenciaApliaciones = {
+
+    title: "LICENCIA DE LA APLICACIÓN",
+
+    description1: "“Aplicación” hace referencia a una aplicación u otra interfaz técnica que proporciona Spootichat y se utiliza para acceder a los Servicios. De conformidad con los términos de este Acuerdo, por el presente documento, Spootichat le confiere una licencia personal, no exclusiva, no transferible, limitada y revocable para descargar, ejecutar y utilizar la Aplicación para uso personal en dispositivos relevantes que usted posea o controle. Dicha licencia también se aplica a actualizaciones y mejoras que reemplazan o complementan los Servicios en cualquier aspecto y que no se distribuyen con una licencia separada y documentación relacionada. A usted se le confiere una licencia de la Aplicación, no se le vende la licencia, y Spootichat conserva la propiedad de todas las copias de la Aplicación incluso después de la instalación en sus dispositivos. Spootichat puede transferir sus derechos y obligaciones o subcontratar o sublicenciar sus obligaciones, de conformidad con este Acuerdo, a otra entidad jurídica, siempre y cuando sus derechos legales y como consumidor no se vean perjudicados. Usted no puede transferir sus derechos y obligaciones ni subcontratar o sublicenciar sus obligaciones, de conformidad con este Acuerdo, a otra entidad jurídica."
+
+}

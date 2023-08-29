@@ -1,0 +1,9 @@
+export const Disposiciones = {
+
+    title: "DISPOSICIONES VARIAS",
+    
+    description1: "No existe ninguna relación de agencia, asociación, empresa conjunta, relación de empleado y empleador o de franquiciado y franquiciante entre usted y Spootichat o entre Spootichat y cualquier otro usuario de los Servicios. Si un tribunal con competencia jurisdiccional descubre que una disposición de este Acuerdo no es válida, la invalidez de dicha disposición no afectará la validez de cualquier otra disposición del Acuerdo, que permanecerá en vigor, a menos que dicha eliminación frustre sustancialmente la intención de las partes, en cuyo caso este Acuerdo finalizará. Nuestro incumplimiento o falta de aplicación de una disposición de este Acuerdo no debe interpretarse como una renuncia a dicha disposición u otra disposición en este Acuerdo. Ninguna renuncia tendrá vigencia ante Spootichat a menos que se realice por escrito y ninguna renuncia deberá interpretarse como una renuncia a cualquier otra instancia o una instancia posterior. Este Acuerdo no pretende ni implica brindar a una persona que no sea una parte un derecho para aplicar cualquiera de sus disposiciones.",
+
+    description2: "Spootichat pretende depender de este Acuerdo, incluida la Política de privacidad aplicable, y cualquier notificación con respecto a los Servicios que le enviemos o publiquemos en los Servicios. Si requiere cambios en el Acuerdo, dichos cambios deben acordarse de forma expresa y por escrito entre usted y Spootichat. Esto ayudará a evitar cualquier problema sobre lo que usted espera de Spootichat y qué espera Spootichat de usted.."
+
+}

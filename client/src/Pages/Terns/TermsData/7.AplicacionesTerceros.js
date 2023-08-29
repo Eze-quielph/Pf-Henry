@@ -1,0 +1,6 @@
+export const AplicacionesTerceros = {
+
+    title: "APLICACIONES DE TERCEROS",
+
+    description1: "Los servicios proporcionan una plataforma para servicios, plataformas, sitios web y aplicaciones de terceros para brindarle productos y servicios (“Aplicaciones de terceros”) y su uso de estas Aplicaciones de terceros queda sujeto a sus respectivos términos  de uso y políticas de privacidad. Debe comunicarse con el gestor o administrador de sitio web para esas Aplicaciones de terceros si tiene alguna inquietud con respecto a la Aplicación de terceros o al contenido dentro de dicha Aplicación de terceros. Debe comprender y aceptar que Spootichat no se responsabiliza por el comportamiento, las características ni el contenido de las Aplicaciones de terceros ni otorga garantías sobre el comportamiento, las características o el contenido de los materiales en las Aplicaciones de terceros. Debe tomar precauciones al descargar archivos de sitios web y aplicaciones de terceros para proteger su computadora/dispositivo de virus y otros programas destructivos. Si decide acceder a las Aplicaciones de terceros vinculadas, hágalo bajo su propio riesgo."
+}

@@ -38,7 +38,7 @@ export default function Header() {
           <button className="button-menu">Ayuda</button>
           <div className="dropdown-content">
             <Link to="">Soporte</Link>
-            <Link to="">Política de Privacidad y Términos de Uso</Link>
+            <Link to="/terms">Política de Privacidad y Términos de Uso</Link>
           </div>
         </div>
         <Link to="">

@@ -1,0 +1,6 @@
+export const Reclamos = {
+
+    title: "NOTIFICACIÓN Y PROCEDIMIENTOS PARA PRESENTAR RECLAMOS SOBRE VIOLACIONES DE DERECHOS DE AUTOR O PROPIEDAD INTELECTUAL",
+
+    description1: "Podemos deshabilitar o finalizar el uso de los Servicios a los usuarios que violen los derechos de propiedad intelectual de otras personas. Además, tenemos la política de responder a notificaciones de presuntas violaciones que cumplan con la Ley de Derechos de Autor para Medios Digitales en el Nuevo Milenio (Digital Millennium Copyright Act, “DMCA”) de EE. UU., lo que puede incluir eliminar el material, incluido el Contenido del servicio o el Contenido del usuario, que se indique como objeto de la actividad en infracción. Si eliminamos material para cumplir con la DMCA (“Contenido eliminado”), intentaremos comunicarnos con el proveedor de dicho Contenido eliminado para permitirle presentar una contranotificación de conformidad con la DMCA. Suspenderemos las cuentas o bloquearemos el acceso a los Servicios a cualquier usuario que viole los derechos de autor de los demás en reiteradas ocasiones."
+}
