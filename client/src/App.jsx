@@ -1,17 +1,21 @@
-import { Route, Routes } from 'react-router-dom'
+// Importación del enrutador y los componentes necesarios
+import { Route, Routes } from "react-router-dom";
+import React from "react";
+
+// Importación de las páginas
+import Home from "../src/Pages/LandingPage/Home"
+import Terms from "./Pages/Terns/components/Terms";
 import ChatenVivo from './SocketIo/Chat'
-import './App.css'
 
-function App() {
- 
+
+export default function App() {
   return (
-    <div>
-      <h1>Spoty Fans</h1>
-      <Routes>
-        <Route path='/chat' element={<ChatenVivo/>}/>
-      </Routes>
-     </div>
-  )
+    // Enrutador principal
+    <Routes>
+      {/* Ruta a la página principal o inicio de la aplicación */}
+      <Route path="/" element={<Home />} />
+      <Route path="/terms" element={<Terms />} />
+      <Route path='/chat' element={<ChatenVivo/>}/>
+    </Routes>
+  );
 }
-
-export default App

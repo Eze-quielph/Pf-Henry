@@ -1,0 +1,99 @@
+.card-song {
+  align-items: center;
+  width: 300px;
+  height: auto;
+  padding: 1rem;
+  margin: 2rem 0;
+  cursor: pointer;
+  border-radius: 7px;
+  border: none;
+  background-color: #141417;
+  background: linear-gradient(to bottom, #141417, #000000);
+
+  /* background: rgb(242, 242, 242); */
+  transition: box-shadow 0.5s, background-color 0.3s, transform 0.3s;
+}
+
+/* .card-song {
+  align-items: center;
+  width: 300px;
+  height: 450px;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 7px;
+  border: none;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  transition: box-shadow 0.5s, background-color 0.5s, transform 0.5s;
+  box-shadow: 0px 0px 12px 14px rgba(255, 255, 255, 0.1);
+} */
+
+.card-song:hover {
+  
+  box-shadow: 0px 0px 16px 5px rgba(255, 255, 255, 0.994);
+  /* background-color: rgba(175, 173, 173, 0.8); */
+  transform: scale(1.05);
+  border: 2px solid rgb(41, 39, 39)
+}
+
+.card-info {
+  border-radius: 3px;
+  margin-top: 0;
+  transition: background-color 0.5s;
+  padding: 0.1px 10.5px 0.1px 10.5px;
+}
+
+.card-song-info {
+  /* background-color: #ffffff; */
+  background-color: #020202;
+  margin-top: 1rem;
+  padding: 0em;
+  border-radius: 0px 0px 7px 7px;
+}
+
+/* 
+.card-song-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  background-color: transparent;
+  margin-top: 1em;
+  padding: 0em;
+  border-radius: 0px 0px 7px 7px;
+  height: 100%;
+} */
+
+.card-name {
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-top: 8px 0px 0px 0px;
+  font-weight: 600;
+}
+
+.card-artista {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #484848;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.image-song {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px 5px 0px 0px;
+  transition: transform 0.3s;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}

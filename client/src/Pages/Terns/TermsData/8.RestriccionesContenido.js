@@ -1,0 +1,9 @@
+export const RestriccionesContenido = {
+
+    title: "RESTRICCIONES DE CONTENIDO",
+    
+    description1: "Los Servicios incluyen contenido, como grabaciones de sonido, obras audiovisuales, otras obras de video o audio, secuencias de video, imágenes, gráficos, textos, software, obras de autor, archivos, documentos, aplicaciones, material artístico, marcas comerciales, nombres comerciales, metadatos, títulos de álbumes, títulos de grabaciones de sonido, nombres de artistas, propiedad intelectual, o materiales relacionados con estos o cualquier otro material, y su selección, coordinación y arreglo (en conjunto, el “Contenido del servicio”). El Contenido del servicio es propiedad de Spootichat o los terceros y está protegido por los derechos de autor. El Contenido del servicio se pone a su disponibilidad solo para uso personal, como lo permiten expresamente estos Términos.",
+
+    description2: "El uso no autorizado de los Servicios puede constituir una violación de regulaciones o leyes aplicables. Si Spootichat, a su razonable criterio, cree que ha violado los Términos o tiene fundamentos razonables para creer que usted probablemente viola estos Términos, podemos tomar las medidas que creamos necesarias para proteger los Servicios y el Contenido del servicio. Podemos realizar lo siguiente: (a) restringir, suspender o (en el caso de violaciones graves) finalizar su derecho a usar los Servicios; (b) retirar su Contenido del usuario (según se define más adelante) de los Servicios; (c) investigar e iniciar procedimientos judiciales contra usted; o (d) divulgar información a autoridades del cumplimiento de la ley cuando creamos que sea necesario o de conformidad con la ley. Estas acciones no se limitan y podemos tomar otras medidas que consideremos razonablemente adecuadas."
+
+}
