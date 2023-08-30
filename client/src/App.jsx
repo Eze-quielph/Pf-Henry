@@ -6,6 +6,7 @@ import React from "react";
 import Home from "../src/Pages/LandingPage/Home"
 import Terms from "./Pages/Terns/components/Terms";
 import About from './Pages/About/Components/About.jsx';
+import Team from './Pages/Team/Components/Team.jsx';
 import ChatenVivo from './SocketIo/Chat'
 
 
@@ -19,6 +20,7 @@ export default function App() {
       <Route path="/terms" element={<Terms />} />
       <Route path='/chat' element={<ChatenVivo />} />
       <Route path='/about' element={<About />} />
+      <Route path='/team' element={<Team />} />
     </Routes>
   );
 }
