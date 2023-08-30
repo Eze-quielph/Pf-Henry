@@ -5,7 +5,7 @@ import imgMission from './../../../../public/images/imgMission.jpg';
 const About = () => {
     return (
         <BaseLayout>
-            <div className="bg-black p-28 text-white">
+            <div className="bg-black p-28 text-white font-sans">
                 <h1 className="font-bold text-left text-4xl mt-14 mb-14 text-[#54E360]">About SpootChat</h1>
                 <p className="text-left text-lg mb-4">SpootChat's platform revolutionized music listening forever when we launched in 2008. Our move into podcasting brought innovation and a new generation of listeners to the medium, and in 2022 we entered the next audio market primed for growth with the addition of audiobooks.</p>
                 <p className=" text-left text-lg">Today, more listeners than ever can discover, manage and enjoy over 100 million tracks, 5 million podcast titles, and 350,000 audiobooks on Spotify. We are the world's most popular audio streaming subscription service with more than 551 million users, including 220 million subscribers in more than 180 markets.</p>
