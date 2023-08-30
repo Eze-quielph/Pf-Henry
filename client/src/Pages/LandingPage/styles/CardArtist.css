@@ -2,20 +2,20 @@
   align-items: center;
   width: 200px;
   height: auto;
-  cursor: pointer;
-  border-radius: 7px;
-  border: 1px solid transparent;
-  background: rgb(17, 8, 8);
-  transition: box-shadow 0.5s, background-color 0.3s, transform 0.3s;
   padding: 1rem;
   margin: 2rem 0;
+  cursor: pointer;
+  border-radius: 7px;
+  border: none;
+  background: linear-gradient(to bottom, #141417, #000000);
+  transition: box-shadow 0.5s, background-color 0.3s, transform 0.3s;
 }
 
 .card-artist:hover {
   box-shadow: 0px 0px 12px 4px rgba(90, 203, 70, 0.905);
   background-color: rgba(49, 46, 46, 0.05);
   transform: scale(1.05);
-  border: 2px solid rgb(41, 39, 39)
+  border: 2px solid rgb(41, 39, 39);
 }
 
 .cardArtist-info {
@@ -26,7 +26,7 @@
 }
 
 .card-artist-info {
-  background-color: rgb(17, 8, 8);;
+  background-color: #000;
   margin-top: 1em;
   padding: 0em;
   border-radius: 0px 0px 7px 7px;
@@ -43,9 +43,10 @@
 .cardArtist-artista {
   font-size: 14px;
   text-transform: capitalize;
-  color:  rgb(73, 60, 60);;
+  color: #484848;
   margin-top: 0px;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .imageArtist-artist {
@@ -54,7 +55,7 @@
   display: flex;
   justify-content: center;
   border-radius: 5px 5px 0px 0px;
-  background: #ffffff;
+  background: transparent;
   transition: transform 0.3s;
 }
 

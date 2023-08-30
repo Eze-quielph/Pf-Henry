@@ -34,6 +34,27 @@ const Featured = () => {
       album: "Álbum 1",
       descripcion: "Descripción 1",
     },
+    {
+      imagen: "/images/gojira.jpeg",
+      cancion: "The Chant",
+      artista: "Gojira",
+      album: "Álbum 1",
+      descripcion: "Descripción 1",
+    },
+    {
+      imagen: "/images/gojira.jpeg",
+      cancion: "The Chant",
+      artista: "Gojira",
+      album: "Álbum 1",
+      descripcion: "Descripción 1",
+    },
+    {
+      imagen: "/images/gojira.jpeg",
+      cancion: "The Chant",
+      artista: "Gojira",
+      album: "Álbum 1",
+      descripcion: "Descripción 1",
+    },
   ];
   return (
     <div className="container-featured">

@@ -1,0 +1,71 @@
+.container-ourPlans {
+  padding: 10em 3em 10em 3em;
+  background: linear-gradient(to top, #000000, #27272c, #000000);
+}
+
+.seccion-ourPlans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.title-ourPlans {
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2em;
+}
+
+.plan {
+  padding: 30px;
+  color: #11413e;
+  align-items: center;
+  text-align: left;
+  width: 300px;
+  height: auto;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  margin: 0;
+  background: linear-gradient(
+    0.32deg,
+    rgba(26, 139, 133, 0.98) 0.2%,
+    rgba(96, 212, 206, 0.98) 99.7%
+  );
+  transition: box-shadow 0.5s, background-color 0.3s, transform 0.3s;
+}
+
+.plan h1 {
+  font-size: 25px;
+}
+
+.plan p {
+  font-size: 17px;
+}
+
+.plan-benefits {
+  border-radius: 7px;
+  background-color: #87d4d0;
+  padding: 20px;
+}
+
+.backToMain-button {
+  align-items: center;
+  font-size: 17px;
+  display: inline-block;
+  padding: 15px 45px;
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 3px;
+  text-decoration: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.backToMain-button:hover {
+  background-color: #2ab595;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}

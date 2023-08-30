@@ -3,7 +3,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  color: #fff;
+  color: #fff; /* Texto blanco por defecto */
+  font-size: 17px;
   padding: 30px;
   position: fixed;
   top: 0;
@@ -13,11 +14,19 @@ nav {
   transition: background-color 0.3s ease;
 }
 
-/* Estilos para NavBar con transparencia cuando se hace scroll */
+/* Estilos para NavBar cuando se hace scroll */
 nav.scrolling {
-  padding: 5px;
-  background-color: rgba(25, 25, 28, 0.10);
+  padding: 3px;
+  background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(3px);
+  color: #000000; /* Cambiar el color del texto a negro */
+}
+
+/* Estilo para los botones en la navegación cuando se hace scroll en estado hover */
+nav.scrolling .menu-option:hover {
+  background-color: #0000001d;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 nav div {
@@ -47,22 +56,36 @@ nav div a:hover {
   gap: 10px;
 }
 
-.button-menu {
+.menu-option {
   width: auto;
-  font-size: 17px;
-  color: white;
   cursor: pointer;
   border: none;
   margin: 5px;
   padding: 20px;
+  border-radius: 10px;
   background: transparent;
   transition: background-color 0.3s ease;
 }
 
-.button-menu:hover {
+.menu-option:hover {
   background-color: #0000001d;
   border-radius: 10px;
   padding: 20px;
+}
+
+.buttonMenu-option {
+  font-size: 17px;
+  padding: 15px 30px;
+  background-color: #000000;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease;
+  margin: 0;
+}
+
+.buttonMenu-option:hover {
+  background-color: #1db954;
+  text-decoration: none;
 }
 
 /* Estilo para el menú desplegable */
@@ -96,4 +119,3 @@ nav div a:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-

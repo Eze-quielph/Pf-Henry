@@ -8,15 +8,16 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-section">
           <p>Descubre</p>
-          <Link to="">Sobre SpootChat</Link>
-          <Link to="">Team</Link>
+          <Link to="">¿Qué es SpootChat?</Link>
+          <Link to="">Team - Conoce nuestro equipo</Link>
         </div>
+
         <div className="footer-section">
           <p>Ayuda</p>
+          <Link to="">Soporte</Link>
           <Link to="">Contacto</Link>
-          <Link to="">Aviso de privacidad</Link>
-          <Link to="">Términos y condiciones</Link>
         </div>
+
         <div className="footer-section">
           <p>Cuenta</p>
           <Link to="">Regístrate</Link>
@@ -64,7 +65,7 @@ export default function Footer() {
           <p className="footer-text">All rights reserved &copy; 2023</p>
         </div>
         <div className="footer-menu">
-          <Link to="">Aviso de privacidad</Link>
+          <Link to="">Políticas de Privacidad</Link>
           <Link to="">Terminos y condiciones</Link>
         </div>
       </div>

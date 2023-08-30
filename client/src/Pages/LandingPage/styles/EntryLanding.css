@@ -1,11 +1,3 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Telegraf", sans-serif;
-}
-
 .container-entryLanding {
   overflow: hidden;
   height: 100vh;
@@ -13,9 +5,6 @@ body {
   flex-direction: row; /* Dirección horizontal */
   align-items: center; /* Centramos verticalmente */
   justify-content: flex-start; /* Ajustar los elementos al inicio */
-
-  /* background: linear-gradient(to left, #1DB954, #000000); */
-
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0)),
     url("/images/pexels-photo.jpeg");
   background-size: cover;
@@ -47,6 +36,22 @@ body {
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.home-button {
+  display: inline-block;
+  padding: 15px 55px;
+  border-radius: 3px;
+  background-color: #00b44b;
+  text-decoration: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  margin: 0;
+}
+
+.home-button:hover {
+  background-color: #54e360;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 .home-button span {
   font-size: 20px;
   color: #fff;
@@ -55,23 +60,7 @@ body {
 }
 
 .home-button:hover span {
-  color: #d7d6d6;
-}
-
-.home-button {
-  display: inline-block;
-  padding: 15px 55px;
-  background-color: #1db954;
-  border-radius: 3px;
-  text-decoration: none;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease;
-  margin: 0;
-}
-
-.home-button:hover {
-  background-color: #00963f;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
 }
 
 .entryLanding-image {

@@ -15,7 +15,6 @@
   cursor: pointer;
   border: none;
   outline: none;
-
   opacity: 0;
   transform: translateY(100%);
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -27,5 +26,5 @@
 }
 
 .button-scroll-to-top:hover {
-  background-color: #13804f;
+  background-color: #54e360;
 }

@@ -21,28 +21,29 @@ export default function Header() {
   return (
     <nav className={scrolling ? "scrolling" : ""}>
       <div className="logo-container">
-        <Link to="/home">
+        <Link to="/">
           <img src="/images/spotify.png" alt="Logotipo" className="logo-nav" />
         </Link>
         <h1>SpootChat</h1>
       </div>
       <div className="menu-nav">
         <div className="dropdown">
-          <button className="button-menu">Sobre SpotyFans</button>
+          <p className="menu-option">Sobre SpootChat</p>
           <div className="dropdown-content">
-            <Link to="">¿Qué es SpotyFans?</Link>
-            <Link to="">Team (Sobre el equipo)</Link>
+            <Link to="">¿Qué es SpootChat?</Link>
+            <Link to="">Team - Conoce nuestro equipo</Link>
           </div>
         </div>
         <div className="dropdown">
-          <button className="button-menu">Ayuda</button>
+          <p className="menu-option">Ayuda</p>
           <div className="dropdown-content">
             <Link to="">Soporte</Link>
-            <Link to="">Política de Privacidad y Términos de Uso</Link>
+            <Link to="">Políticas de Privacidad</Link>
+            <Link to="">Términos y Condiciones</Link>
           </div>
         </div>
-        <Link to="">
-          <button className="button-menu">Iniciar sesión</button>
+        <Link className="buttonMenu-option" to="/login">
+          Iniciar sesión
         </Link>
       </div>
     </nav>
