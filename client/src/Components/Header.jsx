@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <nav className={scrolling ? "scrolling" : ""}>
       <div className="logo-container">
-        <Link to="/home">
+        <Link to="/">
           <img src="/images/spotify.png" alt="Logotipo" className="logo-nav" />
         </Link>
         <h1>SpootChat</h1>
@@ -41,7 +41,7 @@ export default function Header() {
             <Link to="/terms">Política de Privacidad y Términos de Uso</Link>
           </div>
         </div>
-        <Link to="">
+        <Link to="/user">
           <button className="button-menu">Iniciar sesión</button>
         </Link>
       </div>
