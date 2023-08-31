@@ -24,7 +24,7 @@ const Terms = () => {
   return (
     <BaseLayout>
       <div className="bg-black p-28">
-        <h1 className="text-white mt-16 font-bold text-center text-2xl mt-10 mb-6">
+        <h1 className="text-white mt-16 font-bold text-center text-2xl mb-6">
           Spootichat Política de Privacidad y Términos de Uso
         </h1>
         <br />
